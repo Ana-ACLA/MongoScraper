@@ -1,0 +1,24 @@
+<div class="jumbotron">
+	<h1>Saved Beauty Articles</h1>
+	<p>Click on an article to read it, click mark read to remove from your Saved Articles, or add a comment.</p>
+</div>
+
+{{#each articles}}
+	<div class="input-group articles-list">
+		<img width = "180" height = "135" style= "float: left" src={{this.imgLink}}>	
+		<a href="{{this.storyLink}}" target="_blank" class="form-control" id="title" style= "color: purple; background-color: black; float: left">{{this.title}} </a>
+		<br>
+		<p class="summary">{{this.summary}}</p>		
+		<span class="input-group-btn">		
+			<form action="/unsaved/{{this.id}}" method="POST">
+				<button type="submit" class="btn btn-secondary" style= "background-color: purple">Mark Read</button>
+			</form>
+		</span>
+		<span class="input-group-btn">
+			<form action='/articles/{{this.id}}' method="GET">
+				<button type="submit" class="btn btn-secondary" style= "background-color: purple">Comment</button>
+			</form>
+		</span>
+	</div>
+	<br>
+{{/each}}

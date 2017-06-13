@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Beauty Scraper</title>
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	 <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+				integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+	<style>
+		body { 
+			background-color: lightblue;
+			color: white;
+		}
+
+		.articles-list a {
+			border: none;
+			color: white;
+		}
+
+		button {
+			background-color: purple;
+			margin-left: 7px;
+			color: white;
+		}
+		
+		.jumbotron {
+			margin-top: 8%;
+		}
+
+		.jumbotron, .navbar {
+			background-color: green;
+			color: blue;
+		}
+
+		.jumbotron h2 a {
+			color: blue
+		}
+
+		body div.container nav div div.collapse.navbar-collapse ul li * {
+			font-size: 16px;
+			color: lightblue;
+
+		}
+
+		body div.container nav div div.navbar-header a {
+			font-size: 20px;
+			color: lightblue;
+		}		
+		
+		.summary(
+			float: right;
+		}	
+	</style>
+
+</head>
+<body>
+<div class="container">
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">Beauty Scraper</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="/scrape">Full Article List</a>
+					</li>
+					<li>
+						<a href="/saved">Articles Saved For Later</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	{{{body}}}
+</div>
+</body>
+</html>
